@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حساب النسبة المئوية</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>حساب النسبة المئوية</h1>
+        <form id="percentageForm">
+            <label for="attendees">عدد المناوبين:</label>
+            <input type="number" id="attendees" placeholder="أدخل عدد المناوبين" required>
+            
+            <label for="aValue">عدد أ:</label>
+            <input type="number" id="aValue" placeholder="أدخل عدد أ" required>
+            
+            <label for="total">العدد الكلي:</label>
+            <input type="number" id="total" placeholder="أدخل العدد الكلي" required>
+            
+            <button type="button" onclick="calculatePercentage()">احسب النسبة</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
